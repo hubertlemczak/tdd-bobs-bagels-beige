@@ -25,6 +25,8 @@ describe("Basket", () => {
 
         const expected = [new Bagel("BGLO", 1)]
 
+        console.log(expected)
+
         const result = basket.addBagel("BGLO")
 
         expect(result).toEqual(expected);

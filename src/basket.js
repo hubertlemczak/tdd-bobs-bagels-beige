@@ -9,6 +9,8 @@ class Basket {
         this.counts = {}
     }
 
+    //good
+
     addBagel(SKU, numOfBagels = 1) {      
         for (let i = 0; i < numOfBagels; i++) {
             if (!this.basketIsFull()) {
@@ -109,6 +111,14 @@ class Basket {
     */
 
 }
+
+const basket = new Basket()
+
+// const expected = [new Bagel("BGLO", 1)]
+
+console.log(basket.addBagel("BGLP", 30))
+
+// console.log(basket.contents)
 
 
 module.exports = Basket
